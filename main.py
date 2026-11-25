@@ -4,7 +4,7 @@ import math
 import csv
 from datetime import datetime
 import hashlib
-
+print("old memories")
 class RestaurantDatabase:
     def __init__(self):
         self.connection = None
@@ -14,10 +14,10 @@ class RestaurantDatabase:
             'password': 'your_password',  # Change this
             'database': 'restaurant_db'
         }
-    
+    #old is gold memory 
     def connect(self):
         """Establish database connection"""
-        try:
+        try: ki
             self.connection = mysql.connector.connect(**self.DB_CONFIG)
             if self.connection.is_connected():
                 return True
